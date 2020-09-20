@@ -1,16 +1,15 @@
 {
-    "name": "hap-light-example",
-    "version": "1.0.0",
-    "description": "An example light accessory written using HAPNodeJS as a library",
-    "main": "src/light.js",
-    "author": "Ralf Weinbrecher <developer@ralfweinbrecher.de>",
-    "license": "MIT",
-  
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:rwbr/hap-examples.git"
-      },
-    "dependencies": {
-      "hap-nodejs": "latest"
-    }
+  "name": "hap-light-example",
+  "version": "0.0.1",
+  "description": "An example light accessory written using HAPNodeJS as a library",
+  "main": "src/light.js",
+  "author": "Ralf Weinbrecher <developer@ralfweinbrecher.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rwbr/hap-examples.git"
+  },
+  "dependencies": {
+    "hap-nodejs": "latest"
   }
+}
