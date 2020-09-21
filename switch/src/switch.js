@@ -15,7 +15,7 @@ const switchService = new Service.Switch("Example Switch");
 
 let currentSwitchState = false // on or off
 
-// 'On' characteristic is required for the light service
+// 'On' characteristic is required for the Switch service
 const onCharacteristic = switchService.getCharacteristic(Characteristic.On);
 
 // with the 'on' function we can add event handlers for different events, mainly the 'get' and 'set' event
@@ -24,7 +24,7 @@ onCharacteristic.on(CharacteristicEventTypes.GET, (callback) => {
     callback(undefined, currentSwitchState);
 });
 onCharacteristic.on(CharacteristicEventTypes.SET, (value, callback) => {
-    console.log("Setting light state to: " + value);
+    console.log("Setting switch state to: " + value);
     currentSwitchState = value;
     callback();
 });
